@@ -1,7 +1,9 @@
-#SVM
 library(RSNNS)
 library(ggplot2)
 library(R.matlab)
+
+#código de processamento baseado neste aritgo
+#http://www.di.fc.ul.pt/~jpn/r/rbf/rbf.html
 
 randdata = function(data){
   dP <- cbind(data$P.train,data$P.test)
@@ -33,8 +35,6 @@ processor <- list(
     mean(predteste == t(dados$T.test))
   },
   ProcessarMLP = function(dados,sz,maxtit){
-    #https://rdrr.io/cran/RSNNS/man/mlp.html
-    
     yt <- t(as.matrix(dados$T.train))
     xt <- t(as.matrix(dados$P.train))
     
