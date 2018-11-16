@@ -12,7 +12,7 @@ O projeto consiste em treinar e testar dois modelos de Redes Neuronais Artificia
 
 1. Vá até a pasta do projeto
 
-2. Digite ```Rscript Projeto4.r```
+2. Digite ```Rscript projeto4.r```
 
 3. O programa pedirá para você selecionar o arquivo corresponde ao banco de dados,vá até a pasta raiz do projeto e selecione o arquivo ```spam_data.mat```
 
